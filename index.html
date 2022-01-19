@@ -12,15 +12,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <!-- Iconos -->
-    <!-- <script src="https://kit.fontawesome.com/47d0fd349e.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/47d0fd349e.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
 </head>
 
 <body>
-    <nav></nav>
-    <header></header>
-    <main></main>
+    <!-- Navegador -->
+    <nav class="navbar">
+        <a href="#" class="nav__logo">
+            <img class="logo__img" src="assets/img/logo.svg" alt="Logo">
+        </a>
+        <!--  -->
+        <!-- <div class="nav__menucontainer">
+            <div class="nav__listcontainer" tabindex="0">
+                <ul class="nav__menu" id="navmenu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Acerca de</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Cursos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Precios</a>
+                    </li>
+                </ul>
+                <a id="hamburgesa" href="#!" title="menu" class="nav__hamburguesa">
+                    <i class="fa fa-2x fa-bars"></i>
+                </a>
+            </div>
+            <a href="#!" title="close menu" class="nav__hamburguesa">
+                <i class="fa fa-2x fa-times-circle">
+
+                </i></a>
+        </div> -->
+    </nav>
+
+    <!-- Cabecera -->
+    <header class="header">
+        <img class="header__img" src="assets/img/desarrolloweb2021t.svg" alt="Cursos">
+    </header>
+
+    <!-- Cuerpo -->
+    <main class="main">
+
+        <!-- Caja izquierda -->
+        <section class="cursos">
+            <!-- Carta HTML y CSS -->
+            <article class="tarjeta">
+                <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/html-y-cssb-.jpg" alt="HTML y CSS"></div>
+                <div class="tarjeta__cuerpo">
+                    <h1 class="tarjeta__titulo--h1">HTML y CSS para principiantes.</h1>
+                    <p class="tarjeta__parrafo">HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto, en este curso aprenderás todo sobre HTML y CSS, desde lo más básico hasta un nivel intermedio, logrando desarrollar tu primera
+                        página web responsiva, sin la necesidad de aplicar librerías externas para CSS.</p>
+                    <p class="tarjeta__profesor">Instructor: Betsi Salas</p>
+                    <div class="iconos">
+                        <span class="iconos__texto"><i class="fas fa-thumbs-up"></i> 1</span>
+                        <span class="iconos__texto"><i class="far fa-comments"></i> 9</span>
+                        <span class="iconos__texto"><i class="far fa-eye"></i> 9</span>
+                        <span class="iconos__texto"><i class="fas fa-share-alt"></i> 0</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Carta SASS -->
+            <article class="tarjeta">
+                <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/sass.png" alt="SASS"></div>
+                <div class="tarjeta__cuerpo">
+                    <h2 class="tarjeta__titulo--h2">Estilos con SASS.</h2>
+                    <p class="tajeta__parrafo">Sass es una herramienta importante hoy en día para todo el desarrollador web, ya que permite crear estilos mas ordenados, eficientes y con menos líneas de código. Por ello, en este curso aprenderás todo lo necesario para crear hojas
+                        de estilos desde la sintaxis de SCSS, implementando técnicas propias de SASS.</p>
+                    <p class="tarjeta__profesor">Instructor: Carolina Allaga</p>
+                    <div class="iconos">
+                        <span class="iconos__texto"><i class="fas fa-thumbs-up"></i> 1</span>
+                        <span class="iconos__texto"><i class="far fa-comments"></i> 9</span>
+                        <span class="iconos__texto"><i class="far fa-eye"></i> 8</span>
+                        <span class="iconos__texto"><i class="fas fa-share-alt"></i> 5</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Caja derecha -->
+        <section class="cursos">
+            <section class=""></section>
+            <section></section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
