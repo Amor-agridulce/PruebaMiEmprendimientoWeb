@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titulo -->
     <title>Mi emprendimiento Web</title>
-    <!-- Fonts -->
+    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
@@ -62,7 +62,7 @@
             <article class="tarjeta">
                 <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/html-y-cssb-.jpg" alt="HTML y CSS"></div>
                 <div class="tarjeta__cuerpo">
-                    <h1 class="tarjeta__titulo--h1">HTML y CSS para principiantes.</h1>
+                    <h2 class="tarjeta__titulo">HTML y CSS para principiantes.</h2>
                     <p class="tarjeta__parrafo">HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto, en este curso aprenderás todo sobre HTML y CSS, desde lo más básico hasta un nivel intermedio, logrando desarrollar tu primera
                         página web responsiva, sin la necesidad de aplicar librerías externas para CSS.</p>
                     <p class="tarjeta__profesor">Instructor: Betsi Salas</p>
@@ -79,7 +79,7 @@
             <article class="tarjeta">
                 <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/sass.png" alt="SASS"></div>
                 <div class="tarjeta__cuerpo">
-                    <h2 class="tarjeta__titulo--h2">Estilos con SASS.</h2>
+                    <h2 class="tarjeta__titulo">Estilos con SASS.</h2>
                     <p class="tajeta__parrafo">Sass es una herramienta importante hoy en día para todo el desarrollador web, ya que permite crear estilos mas ordenados, eficientes y con menos líneas de código. Por ello, en este curso aprenderás todo lo necesario para crear hojas
                         de estilos desde la sintaxis de SCSS, implementando técnicas propias de SASS.</p>
                     <p class="tarjeta__profesor">Instructor: Carolina Allaga</p>
@@ -95,8 +95,57 @@
 
         <!-- Caja derecha -->
         <section class="cursos">
-            <section class=""></section>
-            <section></section>
+            <section class="informacion">
+                <div class="informacion__imagen"><img class="imagen__perfil" src="assets/img/web-development.png" alt="Desarrollador"></div>
+                <h1 class="informacion__titulo">CURSOS 2022 LTDA</h1>
+                <section class="rrss">
+                    <a href="https://www.facebook.com/" class="rrss__iconos" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" class="rrss__iconos" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/" class="rrss__iconos" target="_blank"><i class="fab fa-github"></i></a>
+                </section>
+                <p class="informacion__texto">Cursos 2020 Ltda, es una empresa especialista en capacitaciones de personal en Desarrollo Web. Partiendo desde lo mas básico en HTML y CSS, hasta lo más complejo con SASS y JavaScript. Igualmente se ofrecen cursos más especializados para
+                    el BackEnd, implementación de frameworks para el frontEnd, entre otros.</p>
+            </section>
+            <section class="otros">
+                <div class="otros__titulo">
+                    <h2 class="titulo__texto">Más Cursos</h2>
+                </div>
+                <ul class="otros__cursos">
+                    <li class="cursos__lista">
+                        <a href="#" class="cursos__link">Analitica Web (3)</a>
+                    </li>
+                    <li class="cursos__lista">
+                        <a href="#" class="cursos__link">Diseño Web (4)</a>
+                    </li>
+                    <li class="cursos__lista">
+                        <a href="#" class="cursos__link">Desarrollo BackEnd (9)</a>
+                    </li>
+                    <li class="cursos__lista">
+                        <a href="#" class="cursos__link">Seguridad Informática (14)</a>
+                    </li>
+                    <li class="cursos__lista">
+                        <a href="#" class="cursos__link">Social Media (7)</a>
+                    </li>
+                    <li class="cursos__lista">
+                        <a href="#" class="cursos__link">SEO (8)</a>
+                    </li>
+                    <li class="cursos__lista">
+                        <a href="#" class="cursos__link">UI/UX (3)</a>
+                    </li>
+                    <li class="cursos__lista">
+                        <a href="#" class="cursos__link">JavaScript (5)</a>
+                    </li>
+                    <li class="cursos__lista">
+                        <a href="#" class="cursos__link">VueJS (1)</a>
+                    </li>
+                </ul>
+
+                <!-- Gif -->
+                <section class="gif">
+                    <object data="assets/img/web.svg" type="image/svg+xml"></object>
+                    <!-- Animacion -->
+                </section>
+            </section>
         </section>
     </main>
 
@@ -116,9 +165,9 @@
                     <a href="" class="footer__link">Sobre Anuncios</a>
                 </li>
             </ul>
-            <div class="form">
-                <input type="email" name="email" class="form__input" requiered placeholder="e-mail">
-                <button type="button" class="form__button">Enviar</button>
+            <div class="formulario">
+                <input type="email" name="email" class="formulario__input" requiered placeholder="e-mail">
+                <button type="button" class="formulario__boton">Enviar</button>
 
             </div>
         </nav>
