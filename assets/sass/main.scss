@@ -1,5 +1,4 @@
 //abstract
-@import 'abstracts/mixins';
 @import 'abstracts/variables';
 @import 'abstracts/keyframes';
 //base
@@ -12,8 +11,6 @@
 @import 'layout/footer';
 @import 'layout/g_grid';
 //components
-@import 'components/buttons';
-@import 'components/inputs';
 @import 'components/cards';
 @import 'components/grid';
 //pages
