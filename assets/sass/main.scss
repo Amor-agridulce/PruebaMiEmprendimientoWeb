@@ -1,20 +1,20 @@
 //abstract
 @import 'abstracts/mixins';
-@import 'abstract/variables';
-@import 'abstract/keyframes';
+@import 'abstracts/variables';
+@import 'abstracts/keyframes';
 //base
 @import 'base/reset';
 @import 'base/typography';
 //layout
 @import 'layout/navbar';
 @import 'layout/header';
-@import 'layout/aside';
+@import 'layout/caja2';
 @import 'layout/footer';
-@import 'layout/g-grid';
+@import 'layout/g_grid';
 //components
 @import 'components/buttons';
 @import 'components/inputs';
-@import 'components/card';
+@import 'components/cards';
 @import 'components/grid';
 //pages
 @import 'pages/home';

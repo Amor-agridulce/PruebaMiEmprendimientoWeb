@@ -1,17 +1,19 @@
-
-
-.faq {
+.caja2 {
     font-family: $poppins;
     margin: 0 1rem;
     border: 1px solid $black;
-    &__title {
-      text-transform: uppercase;
-      font-size: xx-large;
-      font-family: $ubuntu;
-    }
+}
+
+.informacion{
+  &__titulo {
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-family: $ubuntu;
   }
-  .img {
-    &__profile {
+}
+  
+.tarjeta_imagen {
+    &__perfil {
       width: 10rem;
       border-radius: 50rem;
       -webkit-border-radius: 50rem;
