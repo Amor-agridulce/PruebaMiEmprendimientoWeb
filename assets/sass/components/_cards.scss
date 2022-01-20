@@ -1,23 +1,23 @@
 .tarjeta {
-        width: 100%;
+    width: 100%;
+    padding: 1rem;
+    font-family: $ubuntu;
+    border: 1px solid $sable;
+    margin: 1rem;
+    &__cuerpo {
         padding: 1rem;
-        font-family: $ubuntu;
-        border: 1px solid $black;
-        margin: 1rem;
-        &__cuerpo {
-            padding: 1rem;
-        }
-        &__titulo {
-            font-size: $large;
-            margin: 0;
-        }
-        &__parrafo {
-            font-size: $small;
-        }
-        &__profesor {
-            font-weight: $bold;
-        }
     }
+    &__titulo {
+        font-size: $large;
+        margin: 0;
+    }
+    &__parrafo {
+        font-size: $small;
+    }
+    &__profesor {
+        font-weight: $bold;
+    }
+}
 
 .imagen {
     &__top {
@@ -28,6 +28,6 @@
 
 .iconos {
     &__text {
-        margin-right: 1rem;      
+        margin-right: 1rem;
     }
 }

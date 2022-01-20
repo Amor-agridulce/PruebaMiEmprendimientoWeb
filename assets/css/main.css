@@ -704,7 +704,7 @@ template {
   width: 100%;
   padding: 1rem;
   font-family: "Ubuntu", sans-serif;
-  border: 1px solid #000000;
+  border: 1px solid #060606;
   margin: 1rem;
 }
 .tarjeta__cuerpo {
@@ -731,6 +731,7 @@ template {
 }
 
 .main {
+  margin-top: 2rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
