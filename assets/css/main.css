@@ -347,12 +347,6 @@ template {
   border: 1px solid #000000;
 }
 
-.informacion__titulo {
-  text-transform: uppercase;
-  font-size: xx-large;
-  font-family: "Ubuntu", sans-serif;
-}
-
 .imagen__perfil {
   width: 10rem;
   border-radius: 50rem;
@@ -386,6 +380,11 @@ template {
   text-align: justify;
   font-family: "Ubuntu", sans-serif;
 }
+.informacion__titulo {
+  text-transform: uppercase;
+  font-size: x-large;
+  font-family: "Ubuntu", sans-serif;
+}
 
 .cursos {
   font-family: "Ubuntu", sans-serif;
@@ -410,9 +409,11 @@ template {
 }
 
 .gif {
-  padding: 3rem;
   display: flex;
+  border: 2px solid black;
   justify-content: center;
+  text-align: center;
+  max-width: 30%;
 }
 .gif .svg__img {
   max-width: 80%;
