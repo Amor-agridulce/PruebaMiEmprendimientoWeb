@@ -8,18 +8,21 @@
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-  &__text {
-  }
 }
-.end {
+
+.menu {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-  &__li {
-      list-style: none;
-  }
-  &__link {
+    &__lista {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        list-style: none;
+    }
+    &__link {
       color: $white;
       text-decoration: none;
       padding: 0 1rem;
@@ -31,13 +34,10 @@
       &:hover{
           color: $orange;
       }
+    }
 }
-  &__ul {
-      display: flex;
-      align-items: center;
-  }
-}
-.input {
+
+.formulario {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -52,7 +52,7 @@
             outline: none;
         }
     }
-  &__button {
+    &__button {
         border: none;
         outline: none;
         cursor: pointer;
@@ -72,9 +72,5 @@
         &:hover{
             background: $white;
         }
-}
-}
-.text {
-  &__end {
-  }
+    }
 }

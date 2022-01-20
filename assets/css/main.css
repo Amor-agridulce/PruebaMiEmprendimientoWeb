@@ -238,7 +238,7 @@ template {
   display: none;
 }
 
-.nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,20 +248,19 @@ template {
   z-index: 5;
   padding: 1rem;
 }
-
-.logo__svg {
-  width: 2.5rem;
-}
-
-.nav__logo {
+.navbar__logo {
   text-decoration: none;
 }
 
-.nav__menucontainer {
+.logo__img {
+  width: 2.5rem;
+}
+
+.navbar__menu {
   position: relative;
 }
 
-.nav__hamburger {
+.navbar__hamburguesa {
   color: inherit;
   min-width: 32px;
   min-height: 32px;
@@ -271,7 +270,7 @@ template {
   text-decoration: none;
 }
 
-.nav__hamburgerclose {
+.navbar__hamburguesacerrar {
   color: inherit;
   position: absolute;
   top: 0;
@@ -284,7 +283,7 @@ template {
   text-decoration: none;
 }
 
-.nav__menu {
+.navbar__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -294,11 +293,11 @@ template {
   font-weight: 500;
 }
 
-.nav__item {
+.navbar__item {
   margin-right: 1rem;
 }
 
-.nav__link {
+.navbar__link {
   color: inherit;
   text-decoration: none;
   width: 100%;
@@ -306,21 +305,21 @@ template {
   font-weight: 700;
 }
 
-.nav__link:hover,
-.nav__link:focus-visible {
+.navbar__link:hover,
+.navbar__link:focus-visible {
   color: #ffa600;
 }
 
 @media (max-width: 520px) {
-  .nav__hamburger {
+  .navbar__hamburguesa {
     display: flex;
     opacity: 1;
   }
-  .nav__hamburger:hover {
+  .navbar__hamburguesa:hover {
     color: #ffa600;
   }
 
-  .nav__menu {
+  .navbar__list {
     opacity: 0;
     position: fixed;
     visibility: none;
@@ -337,8 +336,8 @@ template {
     background: white;
   }
 
-  .nav__listcontainer:focus .nav__menu,
-.nav__listcontainer:focus-within .nav__menu {
+  .navbar__container:focus .navbar__list,
+.navbar__container:focus-within .navbar__list {
     position: absolute;
     visibility: visible;
     opacity: 1;
@@ -347,31 +346,31 @@ template {
   }
 
   @supports (backdrop-filter: blur(10px)) {
-    .nav__listcontainer:focus .nav__menu,
-.nav__listcontainer:focus-within .nav__menu {
+    .navbar__container:focus .navbar__list,
+.navbar__container:focus-within .navbar__list {
       background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(10px);
     }
   }
-  .nav__item {
+  .navbar__item {
     margin-right: 0;
     padding: 0.5rem 3rem;
   }
 
-  .nav__link:hover,
-.nav__link:focus {
+  .navbar__link:hover,
+.navbar__link:focus {
     opacity: 0.8;
     color: #ffa600;
   }
 
-  .nav__listcontainer:focus .nav__hamburger,
-.nav__listcontainer:focus-within .nav__hamburger {
+  .navbar__container:focus .navbar__hamburguesa,
+.navbar__container:focus-within .nav__hamburguesa {
     opacity: 0;
     z-index: -1;
   }
 
-  .nav__listcontainer:focus + .nav__hamburgerclose,
-.nav__listcontainer:focus-within + .nav__hamburgerclose {
+  .navbar__container:focus + .navbar__hamburguesacerrar,
+.navbar__container:focus-within + .navbar__hamburguesacerrar {
     display: flex;
     opacity: 1;
     z-index: 1;
@@ -400,7 +399,7 @@ template {
   font-family: "Ubuntu", sans-serif;
 }
 
-.tarjeta_imagen__perfil {
+.imagen__perfil {
   width: 10rem;
   border-radius: 50rem;
   -webkit-border-radius: 50rem;
@@ -410,13 +409,13 @@ template {
   border: 2px solid black;
 }
 
-.rrss__icon {
+.rrss__iconos {
   font-size: 35px;
   margin: 0 1rem;
   color: black;
 }
 
-.about {
+.informacion {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -424,44 +423,44 @@ template {
   align-items: center;
   justify-content: center;
 }
-.about__img {
+.informacion__imagen {
   width: 100%;
   text-align: center;
 }
-.about__text {
+.informacion__texto {
   padding: 0 2rem;
   text-align: justify;
   font-family: "Ubuntu", sans-serif;
 }
 
-.courses {
+.cursos {
   font-family: "Ubuntu", sans-serif;
 }
-.courses__link {
+.cursos__link {
   text-decoration: none;
 }
-.courses__list {
+.cursos__lista {
   list-style: circle;
 }
 
-.other {
+.otros {
   padding: 0 3rem;
 }
-.other__courses {
+.otros__cursos {
   padding: 1rem;
 }
-.other__title {
+.otros__titulo {
   text-align: center;
   background-color: #060606;
   color: white;
 }
 
-.animation {
+.gif {
   padding: 3rem;
   display: flex;
   justify-content: center;
 }
-.animation .svg__img {
+.gif .svg__img {
   max-width: 80%;
 }
 
@@ -476,16 +475,21 @@ template {
   align-items: center;
   flex-flow: row wrap;
 }
-.end {
+
+.menu {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }
-.end__li {
+.menu__lista {
+  display: flex;
+  align-items: center;
+}
+.menu__item {
   list-style: none;
 }
-.end__link {
+.menu__link {
   color: white;
   text-decoration: none;
   padding: 0 1rem;
@@ -495,31 +499,27 @@ template {
   -ms-transition: all 300ms ease-in;
   -o-transition: all 300ms ease-in;
 }
-.end__link:hover {
+.menu__link:hover {
   color: #ffa600;
 }
-.end__ul {
-  display: flex;
-  align-items: center;
-}
 
-.input {
+.formulario {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   padding: 1rem 0;
 }
-.input__email {
+.formulario__email {
   color: black;
   padding: 0 0.5rem;
   width: 50%;
   border: none;
 }
-.input__email:focus {
+.formulario__email:focus {
   background: #ffaf6d;
   outline: none;
 }
-.input__button {
+.formulario__button {
   border: none;
   outline: none;
   cursor: pointer;
@@ -537,7 +537,7 @@ template {
   -ms-transition: 200ms;
   -o-transition: 200ms;
 }
-.input__button:hover {
+.formulario__button:hover {
   background: white;
 }
 
@@ -743,33 +743,33 @@ template {
     grid-column: span 1;
   }
 }
-.card {
+.tarjeta {
   width: 100%;
   padding: 1rem;
   font-family: "Ubuntu", sans-serif;
   border: 1px solid black;
   margin: 1rem;
 }
-.card__body {
+.tarjeta__cuerpo {
   padding: 1rem;
 }
-.card__title {
+.tarjeta__titulo {
   font-size: 20px;
   margin: 0;
 }
-.card__description {
+.tarjeta__parrafo {
   font-size: 14px;
 }
-.card__author {
+.tarjeta__profesor {
   font-weight: 700;
 }
 
-.img__top {
+.imagen__top {
   width: 100%;
   object-fit: fill;
 }
 
-.icon__text {
+.iconos__text {
   margin-right: 1rem;
 }
 

@@ -1,31 +1,32 @@
-.card {
-    width: 100%;
-    padding: 1rem;
-    font-family: $ubuntu;
-    border: 1px solid $black;
-    margin: 1rem;
-    &__body {
+.tarjeta {
+        width: 100%;
         padding: 1rem;
+        font-family: $ubuntu;
+        border: 1px solid $black;
+        margin: 1rem;
+        &__cuerpo {
+            padding: 1rem;
+        }
+        &__titulo {
+            font-size: $large;
+            margin: 0;
+        }
+        &__parrafo {
+            font-size: $small;
+        }
+        &__profesor {
+            font-weight: $bold;
+        }
     }
-    &__title {
-        font-size: $large;
-        margin: 0;
-    }
-    &__description {
-        font-size: $small;
-    }
-    &__author {
-        font-weight: $bold;
-    }
-}
-.img {
+
+.imagen {
     &__top {
         width: 100%;
         object-fit: fill;
     }
 }
 
-.icon {
+.iconos {
     &__text {
         margin-right: 1rem;      
     }

@@ -30,9 +30,9 @@
                     <li class="navbar__item"><a class="navbar__link" href="#">Cursos</a></li>
                     <li class="navbar__item"><a class="navbar__link" ref="#">Precios</a></li>
                 </ul>
-                <a id="hamburgesa" href="#" title="menu" class="nav__hamburguesa"><i class="fa fa-2x fa-bars"></i></a>
+                <a id="hamburguesa" href="#" title="menu" class="navbar__hamburguesa"><i class="fa fa-2x fa-bars"></i></a>
             </div>
-            <a href="#" title="menu cerrar" class="nav__hamburgesacerrar"><i class="fa fa-2x fa-window-close"></i></a>
+            <a href="#" title="menu cerrar" class="navbar__hamburguesacerrar"><i class="fa fa-2x fa-window-close"></i></a>
         </div>
     </nav>
 
@@ -43,12 +43,11 @@
 
     <!-- Cuerpo -->
     <main class="main">
-        <div class="cursos">
             <!-- Caja izquierda -->
             <section class="caja">
                 <!-- Carta HTML y CSS -->
-                <article class="caja__tarjeta">
-                    <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/html-y-cssb-.jpg" alt="HTML y CSS"></div>
+                <article class="tarjeta">
+                    <div class="imagen"><img class="imagen__top" src="assets/img/html-y-cssb-.jpg" alt="HTML y CSS"></div>
                     <div class="tarjeta__cuerpo">
                         <h2 class="tarjeta__titulo">HTML y CSS para principiantes.</h2>
                         <p class="tarjeta__parrafo">HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto, en este curso aprenderás todo sobre HTML y CSS, desde lo más básico hasta un nivel intermedio, logrando desarrollar tu primera
@@ -64,7 +63,7 @@
                 </article>
 
                 <!-- Carta SASS -->
-                <article class="caja__tarjeta">
+                <article class="tarjeta">
                     <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/sass.png" alt="SASS"></div>
                     <div class="tarjeta__cuerpo">
                         <h2 class="tarjeta__titulo">Estilos con SASS.</h2>
@@ -134,7 +133,6 @@
                     </section>
                 </section>
             </section>
-        </div>
     </main>
 
     <!-- Footer -->
@@ -142,12 +140,12 @@
         <div class="footer__texto">
             <small class="texto__end">&copy;2022 | Todos los derechos reservados.</small>
         </div>
-        <nav class="footer__menu">
-            <ul class="footer__lista">
-                <li class="footer__item"><a href="" class="footer__link">Legal</a></li>
-                <li class="footer__item"><a href="" class="footer__link">Sobre Anuncios</a></li>
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="" class="menu__link">Legal</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Sobre Anuncios</a></li>
             </ul>
-            <div class="footer__formulario">
+            <div class="formulario">
                 <input type="email" class="formulario__email" requiered placeholder="e-mail">
                 <button type="button" class="formulario__button">Enviar</button>
             </div>

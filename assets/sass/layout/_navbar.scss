@@ -1,4 +1,4 @@
-.nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,23 +7,23 @@
     color: $white;
     z-index: 5;
     padding: 1rem;
-  
-  }
-  .logo{
-    &__svg{
-      width: 2.5rem;
+
+    &__logo{
+      text-decoration: none;
     }
   }
-  
-  .nav__logo {
-    text-decoration: none;
+
+.logo{ 
+  &__img{
+    width: 2.5rem;
   }
+}
   
-  .nav__menucontainer {
+.navbar__menu {
     position: relative;
-  }
+}
   
-  .nav__hamburger {
+.navbar__hamburguesa {
     color: inherit;
     min-width: 32px;
     min-height: 32px;
@@ -31,9 +31,9 @@
     display: none;
     opacity: 0;
     text-decoration: none;
-  }
+}
   
-  .nav__hamburgerclose {
+  .navbar__hamburguesacerrar {
     color: inherit;
     position: absolute;
     top: 0;
@@ -46,7 +46,7 @@
     text-decoration: none;
   }
   
-  .nav__menu {
+  .navbar__list {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -56,12 +56,12 @@
     font-weight: 500;
   }
   
-  .nav__item {
+  .navbar__item {
     margin-right: 1rem;
   
   }
   
-  .nav__link {
+  .navbar__link {
     color: inherit;
     text-decoration: none;
     width: 100%;
@@ -69,13 +69,13 @@
     font-weight: $bold;
   }
   
-  .nav__link:hover,
-  .nav__link:focus-visible {
+  .navbar__link:hover,
+  .navbar__link:focus-visible {
     color: $orange;
   }
   
   @media (max-width: 520px) {
-    .nav__hamburger {
+    .navbar__hamburguesa {
       display: flex;
       opacity: 1;
       &:hover{
@@ -83,7 +83,7 @@
       }
     }
   
-    .nav__menu {
+    .navbar__list {
       opacity: 0;
       position: fixed;
       visibility: none;
@@ -100,8 +100,8 @@
       background: $white;
     }
   
-    .nav__listcontainer:focus .nav__menu,
-    .nav__listcontainer:focus-within .nav__menu {
+    .navbar__container:focus .navbar__list,
+    .navbar__container:focus-within .navbar__list {
       position: absolute;
       visibility: visible;
       opacity: 1;
@@ -111,31 +111,31 @@
   
     
     @supports (backdrop-filter: blur(10px)) {
-      .nav__listcontainer:focus .nav__menu,
-      .nav__listcontainer:focus-within .nav__menu {
+      .navbar__container:focus .navbar__list,
+      .navbar__container:focus-within .navbar__list {
         background: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(10px);
       }
     }
   
-    .nav__item {
+    .navbar__item {
       margin-right: 0;
       padding: 0.5rem 3rem;
     }
-    .nav__link:hover,
-    .nav__link:focus {
+    .navbar__link:hover,
+    .navbar__link:focus {
       opacity: 0.8;
       color: $orange;
     }
   
-    .nav__listcontainer:focus .nav__hamburger,
-    .nav__listcontainer:focus-within .nav__hamburger {
+    .navbar__container:focus .navbar__hamburguesa,
+    .navbar__container:focus-within .nav__hamburguesa {
       opacity: 0;
       z-index: -1;
     }
   
-    .nav__listcontainer:focus + .nav__hamburgerclose,
-    .nav__listcontainer:focus-within + .nav__hamburgerclose {
+    .navbar__container:focus + .navbar__hamburguesacerrar,
+    .navbar__container:focus-within + .navbar__hamburguesacerrar {
       display: flex;
       opacity: 1;
       z-index: 1;
