@@ -410,13 +410,14 @@ template {
 
 .gif {
   display: flex;
-  border: 2px solid black;
   justify-content: center;
   text-align: center;
-  max-width: 30%;
+  max-width: 100%;
+  margin-bottom: 3%;
 }
 .gif .svg__img {
   max-width: 80%;
+  max-height: 200px;
 }
 
 .footer {
