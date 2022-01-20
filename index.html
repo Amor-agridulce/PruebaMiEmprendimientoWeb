@@ -14,7 +14,7 @@
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/47d0fd349e.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 
 <body>
@@ -24,142 +24,133 @@
         <a href="#" class="navbar__logo"><img class="logo__img" src="assets/img/logo.svg" alt="Logo"></a>
         <!-- Menú derecha -->
         <div class="navbar__menu">
-            <div class="navbar__container">
+            <div class="navbar__container" tabindex="0">
                 <ul class="navbar__list" id="navbarmenu">
-                    <li class="navbar__item"><a href="#">Acerca de</a></li>
-                    <li class="navbar__item"><a href="#">Cursos</a></li>
-                    <li class="navbar__item"><a href="#">Precios</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#">Acerca de</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#">Cursos</a></li>
+                    <li class="navbar__item"><a class="navbar__link" ref="#">Precios</a></li>
                 </ul>
-                <a id="hamburgesa" href="#!" title="menu" class="nav__hamburguesa">
-                    <i class="fa fa-2x fa-bars"></i>
-                </a>
+                <a id="hamburgesa" href="#" title="menu" class="nav__hamburguesa"><i class="fa fa-2x fa-bars"></i></a>
             </div>
-            <label for="menu" class="navbar__menu"><i class="fas fa-bars"></i></label>
-            <!-- <a href="#!" title="close menu" class="nav__hamburguesa"><i class="fa fa-2x fa-times-circle"></i></a> -->
+            <a href="#" title="menu cerrar" class="nav__hamburgesacerrar"><i class="fa fa-2x fa-window-close"></i></a>
         </div>
     </nav>
 
     <!-- Cabecera -->
     <header class="header">
-        <div class="header__img"><img src="assets/img/desarrolloweb2021t.svg" alt="Cursos"></div>
+        <img class="header__img" src="assets/img/desarrolloweb2021t.svg" alt="Cursos">
     </header>
 
     <!-- Cuerpo -->
     <main class="main">
-
-        <!-- Caja izquierda -->
-        <section class="cursos">
-            <!-- Carta HTML y CSS -->
-            <article class="tarjeta">
-                <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/html-y-cssb-.jpg" alt="HTML y CSS"></div>
-                <div class="tarjeta__cuerpo">
-                    <h2 class="tarjeta__titulo">HTML y CSS para principiantes.</h2>
-                    <p class="tarjeta__parrafo">HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto, en este curso aprenderás todo sobre HTML y CSS, desde lo más básico hasta un nivel intermedio, logrando desarrollar tu primera
-                        página web responsiva, sin la necesidad de aplicar librerías externas para CSS.</p>
-                    <p class="tarjeta__profesor">Instructor: Betsi Salas</p>
-                    <div class="iconos">
-                        <span class="iconos__texto"><i class="fas fa-thumbs-up"></i> 1</span>
-                        <span class="iconos__texto"><i class="far fa-comments"></i> 9</span>
-                        <span class="iconos__texto"><i class="far fa-eye"></i> 9</span>
-                        <span class="iconos__texto"><i class="fas fa-share-alt"></i> 0</span>
+        <div class="row cursos">
+            <!-- Caja izquierda -->
+            <section class="caja col-12 col-sm-12 col-md-6">
+                <!-- Carta HTML y CSS -->
+                <article class="caja__tarjeta">
+                    <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/html-y-cssb-.jpg" alt="HTML y CSS"></div>
+                    <div class="tarjeta__cuerpo">
+                        <h2 class="tarjeta__titulo">HTML y CSS para principiantes.</h2>
+                        <p class="tarjeta__parrafo">HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto, en este curso aprenderás todo sobre HTML y CSS, desde lo más básico hasta un nivel intermedio, logrando desarrollar tu primera
+                            página web responsiva, sin la necesidad de aplicar librerías externas para CSS.</p>
+                        <p class="tarjeta__profesor">Instructor: Betsi Salas</p>
+                        <div class="iconos">
+                            <span class="iconos__texto"><i class="fas fa-thumbs-up"></i> 1</span>
+                            <span class="iconos__texto"><i class="far fa-comments"></i> 9</span>
+                            <span class="iconos__texto"><i class="far fa-eye"></i> 9</span>
+                            <span class="iconos__texto"><i class="fas fa-share-alt"></i> 0</span>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <!-- Carta SASS -->
-            <article class="tarjeta">
-                <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/sass.png" alt="SASS"></div>
-                <div class="tarjeta__cuerpo">
-                    <h2 class="tarjeta__titulo">Estilos con SASS.</h2>
-                    <p class="tajeta__parrafo">Sass es una herramienta importante hoy en día para todo el desarrollador web, ya que permite crear estilos mas ordenados, eficientes y con menos líneas de código. Por ello, en este curso aprenderás todo lo necesario para crear hojas
-                        de estilos desde la sintaxis de SCSS, implementando técnicas propias de SASS.</p>
-                    <p class="tarjeta__profesor">Instructor: Carolina Allaga</p>
-                    <div class="iconos">
-                        <span class="iconos__texto"><i class="fas fa-thumbs-up"></i> 1</span>
-                        <span class="iconos__texto"><i class="far fa-comments"></i> 9</span>
-                        <span class="iconos__texto"><i class="far fa-eye"></i> 8</span>
-                        <span class="iconos__texto"><i class="fas fa-share-alt"></i> 5</span>
+                <!-- Carta SASS -->
+                <article class="caja__tarjeta">
+                    <div class="tarjeta__imagen"><img class="imagen__top" src="assets/img/sass.png" alt="SASS"></div>
+                    <div class="tarjeta__cuerpo">
+                        <h2 class="tarjeta__titulo">Estilos con SASS.</h2>
+                        <p class="tajeta__parrafo">Sass es una herramienta importante hoy en día para todo el desarrollador web, ya que permite crear estilos mas ordenados, eficientes y con menos líneas de código. Por ello, en este curso aprenderás todo lo necesario para crear
+                            hojas de estilos desde la sintaxis de SCSS, implementando técnicas propias de SASS.</p>
+                        <p class="tarjeta__profesor">Instructor: Carolina Allaga</p>
+                        <div class="iconos">
+                            <span class="iconos__texto"><i class="fas fa-thumbs-up"></i> 1</span>
+                            <span class="iconos__texto"><i class="far fa-comments"></i> 9</span>
+                            <span class="iconos__texto"><i class="far fa-eye"></i> 8</span>
+                            <span class="iconos__texto"><i class="fas fa-share-alt"></i> 5</span>
+                        </div>
                     </div>
-                </div>
-            </article>
-        </section>
-
-        <!-- Caja derecha -->
-        <section class="cursos">
-            <section class="informacion">
-                <div class="informacion__imagen"><img class="imagen__perfil" src="assets/img/web-development.png" alt="Desarrollador"></div>
-                <h1 class="informacion__titulo">CURSOS 2022 LTDA</h1>
-                <section class="rrss">
-                    <a href="https://www.facebook.com/" class="rrss__iconos" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/" class="rrss__iconos" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/" class="rrss__iconos" target="_blank"><i class="fab fa-github"></i></a>
-                </section>
-                <p class="informacion__texto">Cursos 2020 Ltda, es una empresa especialista en capacitaciones de personal en Desarrollo Web. Partiendo desde lo mas básico en HTML y CSS, hasta lo más complejo con SASS y JavaScript. Igualmente se ofrecen cursos más especializados para
-                    el BackEnd, implementación de frameworks para el frontEnd, entre otros.</p>
+                </article>
             </section>
-            <section class="otros">
-                <div class="otros__titulo">
-                    <h2 class="titulo__texto">Más Cursos</h2>
-                </div>
-                <ul class="otros__cursos">
-                    <li class="cursos__lista">
-                        <a href="#" class="cursos__link">Analitica Web (3)</a>
-                    </li>
-                    <li class="cursos__lista">
-                        <a href="#" class="cursos__link">Diseño Web (4)</a>
-                    </li>
-                    <li class="cursos__lista">
-                        <a href="#" class="cursos__link">Desarrollo BackEnd (9)</a>
-                    </li>
-                    <li class="cursos__lista">
-                        <a href="#" class="cursos__link">Seguridad Informática (14)</a>
-                    </li>
-                    <li class="cursos__lista">
-                        <a href="#" class="cursos__link">Social Media (7)</a>
-                    </li>
-                    <li class="cursos__lista">
-                        <a href="#" class="cursos__link">SEO (8)</a>
-                    </li>
-                    <li class="cursos__lista">
-                        <a href="#" class="cursos__link">UI/UX (3)</a>
-                    </li>
-                    <li class="cursos__lista">
-                        <a href="#" class="cursos__link">JavaScript (5)</a>
-                    </li>
-                    <li class="cursos__lista">
-                        <a href="#" class="cursos__link">VueJS (1)</a>
-                    </li>
-                </ul>
 
-                <!-- Gif -->
-                <section class="gif">
-                    <object data="assets/img/web.svg" type="image/svg+xml"></object>
-                    <!-- Animacion -->
+            <!-- Caja derecha -->
+            <section class="caja col-12 col-sm-12 col-md-6">
+                <section class="informacion">
+                    <div class="informacion__imagen"><img class="imagen__perfil" src="assets/img/web-development.png" alt="Desarrollador"></div>
+                    <h1 class="informacion__titulo">CURSOS 2022 LTDA</h1>
+                    <section class="rrss">
+                        <a href="https://www.facebook.com/" class="rrss__iconos" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" class="rrss__iconos" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/" class="rrss__iconos" target="_blank"><i class="fab fa-github"></i></a>
+                    </section>
+                    <p class="informacion__texto">Cursos 2020 Ltda, es una empresa especialista en capacitaciones de personal en Desarrollo Web. Partiendo desde lo mas básico en HTML y CSS, hasta lo más complejo con SASS y JavaScript. Igualmente se ofrecen cursos más especializados
+                        para el BackEnd, implementación de frameworks para el frontEnd, entre otros.</p>
+                </section>
+                <section class="otros">
+                    <div class="otros__titulo">
+                        <h2 class="titulo__texto">Más Cursos</h2>
+                    </div>
+                    <ul class="otros__cursos">
+                        <li class="cursos__lista">
+                            <a href="#" class="cursos__link">Analitica Web (3)</a>
+                        </li>
+                        <li class="cursos__lista">
+                            <a href="#" class="cursos__link">Diseño Web (4)</a>
+                        </li>
+                        <li class="cursos__lista">
+                            <a href="#" class="cursos__link">Desarrollo BackEnd (9)</a>
+                        </li>
+                        <li class="cursos__lista">
+                            <a href="#" class="cursos__link">Seguridad Informática (14)</a>
+                        </li>
+                        <li class="cursos__lista">
+                            <a href="#" class="cursos__link">Social Media (7)</a>
+                        </li>
+                        <li class="cursos__lista">
+                            <a href="#" class="cursos__link">SEO (8)</a>
+                        </li>
+                        <li class="cursos__lista">
+                            <a href="#" class="cursos__link">UI/UX (3)</a>
+                        </li>
+                        <li class="cursos__lista">
+                            <a href="#" class="cursos__link">JavaScript (5)</a>
+                        </li>
+                        <li class="cursos__lista">
+                            <a href="#" class="cursos__link">VueJS (1)</a>
+                        </li>
+                    </ul>
+
+                    <!-- Gif -->
+                    <section class="gif">
+                        <object data="assets/img/web.svg" type="image/svg+xml"></object>
+                        <!-- Animacion -->
+                    </section>
                 </section>
             </section>
-        </section>
+        </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer__item">
-            <ul class="footer__texto">
-                <p class="footer__derechos">&copy;2022 | Todos los derechos reservados.</p>
-            </ul>
+            <small>&copy;2022 | Todos los derechos reservados.</small>
         </div>
-        <nav class="footer__nav">
-            <ul class="footer__ul">
-                <li class="footer__li">
-                    <a href="" class="footer__link">Legal</a>
-                </li>
-                <li class="footer__li">
-                    <a href="" class="footer__link">Sobre Anuncios</a>
-                </li>
+        <nav class="footer__navbar">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="" class="footer__link">Legal</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Sobre Anuncios</a></li>
             </ul>
-            <div class="formulario">
+            <div class="footer__formulario">
                 <input type="email" name="email" class="formulario__input" requiered placeholder="e-mail">
-                <button type="button" class="formulario__boton">Enviar</button>
-
+                <button type="button" class="formulario__button">Enviar</button>
             </div>
         </nav>
     </footer>

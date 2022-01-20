@@ -1,0 +1,144 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: $black;
+    color: $white;
+    z-index: 5;
+    padding: 1rem;
+  
+  }
+  .logo{
+    &__svg{
+      width: 2.5rem;
+    }
+  }
+  
+  .nav__logo {
+    text-decoration: none;
+  }
+  
+  .nav__menucontainer {
+    position: relative;
+  }
+  
+  .nav__hamburger {
+    color: inherit;
+    min-width: 32px;
+    min-height: 32px;
+    transition: opacity 80ms linear;
+    display: none;
+    opacity: 0;
+    text-decoration: none;
+  }
+  
+  .nav__hamburgerclose {
+    color: inherit;
+    position: absolute;
+    top: 0;
+    min-width: 32px;
+    min-height: 32px;
+    transition: opacity 150ms linear;
+    display: none;
+    opacity: 0;
+    z-index: -1; 
+    text-decoration: none;
+  }
+  
+  .nav__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .nav__item {
+    margin-right: 1rem;
+  
+  }
+  
+  .nav__link {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    font-family: $poppins;
+    font-weight: $bold;
+  }
+  
+  .nav__link:hover,
+  .nav__link:focus-visible {
+    color: $orange;
+  }
+  
+  @media (max-width: 520px) {
+    .nav__hamburger {
+      display: flex;
+      opacity: 1;
+      &:hover{
+        color: $orange
+      }
+    }
+  
+    .nav__menu {
+      opacity: 0;
+      position: fixed;
+      visibility: none;
+      top: -1000px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 15rem;
+      color: #25310c;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.19);
+      border: 2px solid rgba(255, 255, 255, 0.2); 
+      border-radius: 2rem 0 2rem 2rem;
+      background: $white;
+    }
+  
+    .nav__listcontainer:focus .nav__menu,
+    .nav__listcontainer:focus-within .nav__menu {
+      position: absolute;
+      visibility: visible;
+      opacity: 1;
+      top: 2rem;
+      right: 1.5rem;
+    }
+  
+    
+    @supports (backdrop-filter: blur(10px)) {
+      .nav__listcontainer:focus .nav__menu,
+      .nav__listcontainer:focus-within .nav__menu {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+      }
+    }
+  
+    .nav__item {
+      margin-right: 0;
+      padding: 0.5rem 3rem;
+    }
+    .nav__link:hover,
+    .nav__link:focus {
+      opacity: 0.8;
+      color: $orange;
+    }
+  
+    .nav__listcontainer:focus .nav__hamburger,
+    .nav__listcontainer:focus-within .nav__hamburger {
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    .nav__listcontainer:focus + .nav__hamburgerclose,
+    .nav__listcontainer:focus-within + .nav__hamburgerclose {
+      display: flex;
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+  

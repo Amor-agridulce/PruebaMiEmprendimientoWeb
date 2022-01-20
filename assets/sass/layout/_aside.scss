@@ -1,0 +1,76 @@
+
+
+.faq {
+    font-family: $poppins;
+    margin: 0 1rem;
+    border: 1px solid $black;
+    &__title {
+      text-transform: uppercase;
+      font-size: xx-large;
+      font-family: $ubuntu;
+    }
+  }
+  .img {
+    &__profile {
+      width: 10rem;
+      border-radius: 50rem;
+      -webkit-border-radius: 50rem;
+      -moz-border-radius: 50rem;
+      -ms-border-radius: 50rem;
+      -o-border-radius: 50rem;
+      border: 2px solid $black;
+    }
+  }
+  .rrss {
+  
+    &__icon {
+        font-size: $xx-large;
+        margin: 0 1rem;
+        color: $black;
+    }
+  }
+  .about {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__img {
+      width: 100%;
+      text-align: center;
+    }
+    &__text {
+      padding: 0 2rem;
+      text-align: justify;
+      font-family: $ubuntu;
+    }
+  }
+  .courses {
+    font-family: $ubuntu;
+    &__link {
+      text-decoration: none;
+    }
+    &__list {
+      list-style: circle;
+    }
+  }
+  .other {
+    padding: 0 3rem;
+    &__courses {
+      padding: 1rem;
+    }
+    &__title {
+      text-align: center;
+      background-color: $sable;
+      color: $white;
+    }
+  }
+  .animation{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    .svg__img{
+      max-width: 80%;
+    }
+  }

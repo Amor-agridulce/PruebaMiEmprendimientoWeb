@@ -1,14 +1,80 @@
 .footer {
-    &__derechos {}
-    &__item {}
-    &__li {}
-    &__link {}
-    &__nav {}
-    &__texto {}
-    &__ul {}
+    width: 100%;
+    color: $white;
+    background-color: $black;
+    font-family: $poppins;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  &__text {
+  }
 }
-
-.form {
-    &__button {}
-    &__input {}
+.end {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  &__li {
+      list-style: none;
+  }
+  &__link {
+      color: $white;
+      text-decoration: none;
+      padding: 0 1rem;
+      transition: all 300ms ease-in;
+      -webkit-transition: 200ms ease-out;
+      -moz-transition: all 300ms ease-in;
+      -ms-transition: all 300ms ease-in;
+      -o-transition: all 300ms ease-in;
+      &:hover{
+          color: $orange;
+      }
+}
+  &__ul {
+      display: flex;
+      align-items: center;
+  }
+}
+.input {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    &__email{
+        color: $black;
+        padding: 0 0.5rem;
+        width: 50%;
+        border: none;
+        &:focus{
+            background: $tangerine;
+            outline: none;
+        }
+    }
+  &__button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: small;
+        padding: 0 0.5rem;
+        background: $tangerine;
+        border-radius: 0.3rem;
+        -webkit-border-radius: 0.3rem;
+        -moz-border-radius: 0.3rem;
+        -ms-border-radius: 0.3rem;
+        -o-border-radius: 0.3rem;
+        transition: 200ms;
+        -webkit-transition: 200ms;
+        -moz-transition: 200ms;
+        -ms-transition: 200ms;
+        -o-transition: 200ms;
+        &:hover{
+            background: $white;
+        }
+}
+}
+.text {
+  &__end {
+  }
 }
